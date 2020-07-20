@@ -68,7 +68,7 @@ namespace Microsoft.Azure.IIoT.Platform.Subscriber.Service.Runtime {
         /// <param name="configuration"></param>
         public Config(IConfiguration configuration) : base(configuration) {
             _ep = new EventProcessorConfig(configuration);
-            _eh = new IoTHubEventHubConfig(configuration);
+            _eh = new IoTHubConsumerConfig(configuration);
             _ai = new AppInsightsConfig(configuration);
             _ms = new MetricsServerConfig(configuration);
         }
@@ -76,6 +76,6 @@ namespace Microsoft.Azure.IIoT.Platform.Subscriber.Service.Runtime {
         private readonly MetricsServerConfig _ms;
         private readonly AppInsightsConfig _ai;
         private readonly EventProcessorConfig _ep;
-        private readonly IoTHubEventHubConfig _eh;
+        private readonly IoTHubConsumerConfig _eh;
     }
 }

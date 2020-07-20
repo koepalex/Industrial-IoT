@@ -20,8 +20,8 @@ namespace System.Net {
         /// <returns></returns>
         public static bool IsEmpty(this IPAddress address) {
             return address == null ||
-address.Equals(IPAddress.Any) || address.Equals(IPAddress.IPv6Any) ||
-address.Equals(IPAddress.None) || address.Equals(IPAddress.IPv6None);
+                address.Equals(IPAddress.Any) || address.Equals(IPAddress.IPv6Any) ||
+                address.Equals(IPAddress.None) || address.Equals(IPAddress.IPv6None);
         }
 
         /// <summary>

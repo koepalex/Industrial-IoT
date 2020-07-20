@@ -5,13 +5,13 @@
 
 namespace Microsoft.Azure.IIoT.Platform.Edge.Tunnel.Service {
     using Microsoft.Azure.IIoT.Platform.Edge.Tunnel.Service.Runtime;
-    using Microsoft.Azure.IIoT.Platform.Edge.Tunnel.Services;
     using Microsoft.Azure.IIoT.Azure.ActiveDirectory.Clients;
     using Microsoft.Azure.IIoT.Azure.EventHub.Processor;
     using Microsoft.Azure.IIoT.Azure.IoTHub.Handlers;
     using Microsoft.Azure.IIoT.Azure.IoTHub;
     using Microsoft.Azure.IIoT.Azure.AppInsights;
     using Microsoft.Azure.IIoT.Http.Default;
+    using Microsoft.Azure.IIoT.Http.Tunnel.Services;
     using Microsoft.Azure.IIoT.Rpc.Default;
     using Microsoft.Azure.IIoT.Serializers;
     using Microsoft.Azure.IIoT.AspNetCore.Diagnostics.Default;

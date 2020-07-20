@@ -4,13 +4,12 @@
 // ------------------------------------------------------------
 
 namespace Microsoft.Azure.IIoT.Azure.EventHub.Processor {
-    using Microsoft.Azure.IIoT.Azure.Datalake;
     using System;
 
     /// <summary>
     /// Eventprocessor configuration
     /// </summary>
-    public interface IEventProcessorConfig : IBlobConfig {
+    public interface IEventProcessorConfig : IStorageConfig {
 
         /// <summary>
         /// Set checkpoint interval. null = never.

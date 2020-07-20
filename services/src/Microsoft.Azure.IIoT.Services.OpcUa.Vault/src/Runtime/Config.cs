@@ -20,8 +20,6 @@ namespace Microsoft.Azure.IIoT.Platform.Vault.Service.Runtime {
     using Microsoft.Azure.IIoT.Azure.AppInsights.Runtime;
     using Microsoft.Azure.IIoT.Azure.KeyVault;
     using Microsoft.Azure.IIoT.Azure.KeyVault.Runtime;
-    using Microsoft.Azure.IIoT.Azure.IoTHub.Runtime;
-    using Microsoft.Azure.IIoT.Azure.IoTHub;
     using Microsoft.Azure.IIoT.Azure.ServiceBus;
     using Microsoft.Azure.IIoT.Azure.ServiceBus.Runtime;
     using Microsoft.Azure.IIoT.Azure.CosmosDb;
@@ -34,7 +32,7 @@ namespace Microsoft.Azure.IIoT.Platform.Vault.Service.Runtime {
     /// <summary>
     /// Web service configuration
     /// </summary>
-    public class Config : DiagnosticsConfig, IWebHostConfig, IIoTHubConfig,
+    public class Config : DiagnosticsConfig, IWebHostConfig,
         ICorsConfig, IOpenApiConfig, IVaultConfig, ICosmosDbConfig, IRoleConfig,
         IItemContainerConfig, IKeyVaultConfig, IServiceBusConfig, IRegistryConfig,
         IForwardedHeadersConfig, IAppInsightsConfig {
@@ -93,9 +91,6 @@ namespace Microsoft.Azure.IIoT.Platform.Vault.Service.Runtime {
         public string ServiceBusConnString => _sb.ServiceBusConnString;
 
         /// <inheritdoc/>
-        public string IoTHubConnString => _hub.IoTHubConnString;
-
-        /// <inheritdoc/>
         public string OpcUaRegistryServiceUrl => _registry.OpcUaRegistryServiceUrl;
 
         /// <inheritdoc/>
@@ -118,7 +113,6 @@ namespace Microsoft.Azure.IIoT.Platform.Vault.Service.Runtime {
             _host = new WebHostConfig(configuration);
             _cors = new CorsConfig(configuration);
             _sb = new ServiceBusConfig(configuration);
-            _hub = new IoTHubConfig(configuration);
             _registry = new RegistryConfig(configuration);
             _fh = new ForwardedHeadersConfig(configuration);
             _ai = new AppInsightsConfig(configuration);
@@ -132,7 +126,6 @@ namespace Microsoft.Azure.IIoT.Platform.Vault.Service.Runtime {
         private readonly WebHostConfig _host;
         private readonly CorsConfig _cors;
         private readonly ServiceBusConfig _sb;
-        private readonly IoTHubConfig _hub;
         private readonly RegistryConfig _registry;
         private readonly ForwardedHeadersConfig _fh;
     }

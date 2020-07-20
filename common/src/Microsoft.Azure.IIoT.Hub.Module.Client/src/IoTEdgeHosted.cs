@@ -6,8 +6,8 @@
 namespace Microsoft.Azure.IIoT.Azure.IoTEdge {
     using Microsoft.Azure.IIoT.Azure.IoTEdge.Hosting;
     using Microsoft.Azure.IIoT.Azure.IoTEdge.Clients;
-    using Microsoft.Azure.IIoT.Azure.LogAnalytics;
     using Microsoft.Azure.IIoT.Diagnostics;
+    using Microsoft.Azure.IIoT.Diagnostics.Default;
     using Microsoft.Azure.IIoT.Storage.Default;
     using Autofac;
 
@@ -22,13 +22,9 @@ namespace Microsoft.Azure.IIoT.Azure.IoTEdge {
         /// <param name="builder"></param>
         protected override void Load(ContainerBuilder builder) {
 
-            // Edge metrics collection
-            builder.RegisterType<MetricsCollector>()
+            // Edge metrics collection or server hosting
+            builder.RegisterType<MetricsHost>()
                 .AsImplementedInterfaces().InstancePerLifetimeScope();
-            builder.RegisterType<LogAnalyticsMetricsHandler>()
-                .AsImplementedInterfaces().InstancePerLifetimeScope()
-                .PropertiesAutowired(
-                    PropertyWiringOptions.AllowCircularDependencies);
 
             // Register sdk, edgelet client and token generators
             builder.RegisterType<IoTSdkFactory>()

@@ -4,8 +4,8 @@
 // ------------------------------------------------------------
 
 namespace Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Runtime {
-    using Microsoft.Azure.IIoT.Azure.IoTEdge.Runtime;
     using Microsoft.Azure.IIoT.Platform.OpcUa.Runtime;
+    using Microsoft.Azure.IIoT.Azure.IoTEdge.Runtime;
 
     /// <summary>
     /// Static class that contains the default keys for the legacy command line arguments how they will be represented in

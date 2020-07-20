@@ -5,7 +5,7 @@
 
 namespace Microsoft.Azure.IIoT.Hosting {
     using Microsoft.Azure.IIoT.Hosting.Services;
-    using Microsoft.Azure.IIoT.Rpc.Default;
+    using Microsoft.Azure.IIoT.Http.Tunnel;
     using Microsoft.Azure.IIoT.Tasks.Default;
     using Microsoft.Azure.IIoT.Tasks;
     using Autofac;
@@ -38,6 +38,8 @@ namespace Microsoft.Azure.IIoT.Hosting {
                 .AsImplementedInterfaces().SingleInstance()
                 .IfNotRegistered(typeof(ITaskScheduler));
 #endif
+            // Register http (tunnel) client module
+            builder.RegisterModule<HttpTunnelClient>();
 
             base.Load(builder);
         }

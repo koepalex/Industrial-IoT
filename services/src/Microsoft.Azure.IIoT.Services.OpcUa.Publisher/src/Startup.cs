@@ -7,13 +7,14 @@ namespace Microsoft.Azure.IIoT.Platform.Publisher.Service {
     using Microsoft.Azure.IIoT.Platform.Publisher.Service.Auth;
     using Microsoft.Azure.IIoT.Platform.Publisher.Service.Runtime;
     using Microsoft.Azure.IIoT.Platform.Publisher;
-    using Microsoft.Azure.IIoT.Platform.Publisher.Deploy;
     using Microsoft.Azure.IIoT.Platform.Publisher.Migration;
     using Microsoft.Azure.IIoT.Platform.Registry.Api.Clients;
     using Microsoft.Azure.IIoT.Azure.CosmosDb;
     using Microsoft.Azure.IIoT.Azure.ServiceBus;
     using Microsoft.Azure.IIoT.Azure.AppInsights;
+    using Microsoft.Azure.IIoT.Azure.IoTHub;
     using Microsoft.Azure.IIoT.Azure.IoTHub.Clients;
+    using Microsoft.Azure.IIoT.Azure.IoTHub.Deploy;
     using Microsoft.Azure.IIoT.Storage.Default;
     using Microsoft.Azure.IIoT.Http.Default;
     using Microsoft.Azure.IIoT.Auth;
@@ -203,7 +204,7 @@ namespace Microsoft.Azure.IIoT.Platform.Publisher.Service {
             // Auto Deploy publisher module
             builder.RegisterType<IoTHubConfigurationClient>()
                 .AsImplementedInterfaces();
-            builder.RegisterType<IoTHubPublisherDeployment>()
+            builder.RegisterType<IoTEdgePublisherDeployment>()
                 .AsImplementedInterfaces().SingleInstance();
 
             // ... and auto start

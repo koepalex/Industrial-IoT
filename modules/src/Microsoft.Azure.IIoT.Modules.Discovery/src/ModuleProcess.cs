@@ -15,6 +15,7 @@ namespace Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module {
     using Microsoft.Azure.IIoT.Serializers;
     using Microsoft.Azure.IIoT.Hub;
     using Microsoft.Azure.IIoT.Utils;
+    using Microsoft.Azure.IIoT.Azure.LogAnalytics;
     using Microsoft.Azure.IIoT.Azure.IoTEdge;
     using Microsoft.Extensions.Configuration;
     using Autofac;
@@ -144,6 +145,7 @@ namespace Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module {
             // Register module framework
             builder.RegisterModule<ModuleFramework>();
             builder.RegisterModule<IoTEdgeHosted>();
+            builder.RegisterModule<LogAnalyticsMetrics>();
             builder.RegisterModule<NewtonSoftJsonModule>();
 
             // Register opc ua services

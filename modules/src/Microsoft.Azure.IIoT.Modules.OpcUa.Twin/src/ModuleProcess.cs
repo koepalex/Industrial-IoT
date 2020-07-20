@@ -7,9 +7,6 @@ namespace Microsoft.Azure.IIoT.Platform.Twin.Edge.Module {
     using Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.Runtime;
     using Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.Controllers;
     using Microsoft.Azure.IIoT.Platform.Twin.Edge.Services;
-    using Microsoft.Azure.IIoT.Platform.Edge;
-    using Microsoft.Azure.IIoT.Platform.Edge.Supervisor.Services;
-    using Microsoft.Azure.IIoT.Platform.Edge.Tunnel;
     using Microsoft.Azure.IIoT.Platform.OpcUa;
     using Microsoft.Azure.IIoT.Platform.OpcUa.Services;
     using Microsoft.Azure.IIoT.Hosting;
@@ -18,8 +15,8 @@ namespace Microsoft.Azure.IIoT.Platform.Twin.Edge.Module {
     using Microsoft.Azure.IIoT.Utils;
     using Microsoft.Azure.IIoT.Hub;
     using Microsoft.Azure.IIoT.Serializers;
-    using Microsoft.Azure.IIoT.Rpc.Default;
     using Microsoft.Azure.IIoT.Azure.IoTEdge;
+    using Microsoft.Azure.IIoT.Azure.LogAnalytics;
     using Microsoft.Extensions.Configuration;
     using Autofac;
     using System;
@@ -151,8 +148,8 @@ namespace Microsoft.Azure.IIoT.Platform.Twin.Edge.Module {
 
             // Register module framework
             builder.RegisterModule<ModuleFramework>();
-            builder.RegisterModule<HttpTunnelClient>();
             builder.RegisterModule<IoTEdgeHosted>();
+            builder.RegisterModule<LogAnalyticsMetrics>();
             builder.RegisterModule<NewtonSoftJsonModule>();
 
             // Register opc ua services
@@ -177,7 +174,7 @@ namespace Microsoft.Azure.IIoT.Platform.Twin.Edge.Module {
                 .AsImplementedInterfaces().InstancePerLifetimeScope();
 
             // Register supervisor services
-            builder.RegisterType<SupervisorServices>()
+            builder.RegisterType<EndpointSupervisorServices>()
                 .AsImplementedInterfaces().InstancePerLifetimeScope();
             builder.RegisterType<TwinContainerFactory>()
                 .AsImplementedInterfaces().InstancePerLifetimeScope();
@@ -239,6 +236,7 @@ namespace Microsoft.Azure.IIoT.Platform.Twin.Edge.Module {
                 // Register module framework
                 builder.RegisterModule<ModuleFramework>();
                 builder.RegisterModule<IoTEdgeHosted>();
+                builder.RegisterModule<LogAnalyticsMetrics>();
                 builder.RegisterModule<NewtonSoftJsonModule>();
 
                 // Register twin controllers

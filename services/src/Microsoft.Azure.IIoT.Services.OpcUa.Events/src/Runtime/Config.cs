@@ -18,8 +18,6 @@ namespace Microsoft.Azure.IIoT.Platform.Api.Events.Service.Runtime {
     using Microsoft.Azure.IIoT.Azure.SignalR.Runtime;
     using Microsoft.Azure.IIoT.Azure.ServiceBus;
     using Microsoft.Azure.IIoT.Azure.ServiceBus.Runtime;
-    using Microsoft.Azure.IIoT.Azure.EventHub;
-    using Microsoft.Azure.IIoT.Azure.EventHub.Runtime;
     using Microsoft.Azure.IIoT.Azure.EventHub.Processor;
     using Microsoft.Azure.IIoT.Azure.EventHub.Processor.Runtime;
     using Microsoft.Azure.IIoT.Auth.Runtime;

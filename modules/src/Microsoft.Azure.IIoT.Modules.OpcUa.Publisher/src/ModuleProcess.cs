@@ -8,14 +8,12 @@ namespace Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module {
     using Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Controllers;
     using Microsoft.Azure.IIoT.Platform.Publisher.Edge.Clients;
     using Microsoft.Azure.IIoT.Platform.Publisher.Edge.Services;
-    using Microsoft.Azure.IIoT.Platform.Edge.Supervisor.Services;
-    using Microsoft.Azure.IIoT.Platform.Edge.Tunnel;
     using Microsoft.Azure.IIoT.Platform.Edge;
     using Microsoft.Azure.IIoT.Platform.OpcUa.Services;
     using Microsoft.Azure.IIoT.Platform.OpcUa;
     using Microsoft.Azure.IIoT.Azure.IoTEdge;
+    using Microsoft.Azure.IIoT.Azure.LogAnalytics;
     using Microsoft.Azure.IIoT.Hosting;
-    using Microsoft.Azure.IIoT.Hosting.Services;
     using Microsoft.Azure.IIoT.Tasks.Default;
     using Microsoft.Azure.IIoT.Hub;
     using Microsoft.Azure.IIoT.Utils;
@@ -153,7 +151,7 @@ namespace Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module {
             // Register module and publisher framework ...
             builder.RegisterModule<ModuleFramework>();
             builder.RegisterModule<IoTEdgeHosted>();
-            builder.RegisterModule<HttpTunnelClient>();
+            builder.RegisterModule<LogAnalyticsMetrics>();
             builder.RegisterModule<NewtonSoftJsonModule>();
 
             if (legacyCliOptions.RunInLegacyMode) {
@@ -184,7 +182,7 @@ namespace Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module {
                 builder.AddDebugDiagnostics(config);
 
                 // Register supervisor services to manage writer group twins
-                builder.RegisterType<SupervisorServices>()
+                builder.RegisterType<WriterGroupSupervisorServices>()
                     .AsImplementedInterfaces().InstancePerLifetimeScope();
                 builder.RegisterType<WriterGroupContainerFactory>()
                     .AsImplementedInterfaces().InstancePerLifetimeScope();
@@ -253,6 +251,7 @@ namespace Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module {
                 // Register module framework
                 builder.RegisterModule<ModuleFramework>();
                 builder.RegisterModule<IoTEdgeHosted>();
+                builder.RegisterModule<LogAnalyticsMetrics>();
                 builder.RegisterModule<NewtonSoftJsonModule>();
 
                 // Register writer group controllers

@@ -4,14 +4,13 @@
 // ------------------------------------------------------------
 
 namespace Microsoft.Azure.IIoT.Azure.EventHub.Processor.Runtime {
-    using Microsoft.Azure.IIoT.Azure.Datalake.Runtime;
     using Microsoft.Extensions.Configuration;
     using System;
 
     /// <summary>
     /// Event processor configuration - wraps a configuration root
     /// </summary>
-    public class EventProcessorConfig : BlobConfig, IEventProcessorHostConfig,
+    public class EventProcessorConfig : StorageConfig, IEventProcessorHostConfig,
         IEventProcessorConfig {
 
         /// <summary>

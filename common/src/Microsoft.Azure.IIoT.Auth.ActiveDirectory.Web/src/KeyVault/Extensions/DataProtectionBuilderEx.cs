@@ -3,21 +3,21 @@
 //  Licensed under the MIT License (MIT). See License.txt in the repo root for license information.
 // ------------------------------------------------------------
 
-namespace Microsoft.Azure.IIoT.AspNetCore.Auth {
-    using Microsoft.Azure.IIoT.Azure.ActiveDirectory.Utils;
+namespace Microsoft.Extensions.DependencyInjection {
+    using Microsoft.Azure.IIoT.Azure.AspNetCore.KeyVault;
+    using Microsoft.Azure.IIoT.Azure.AspNetCore.KeyVault.Runtime;
     using Microsoft.Azure.IIoT.Azure.KeyVault;
     using Microsoft.Azure.IIoT.Azure.KeyVault.Runtime;
-    using Microsoft.Azure.IIoT.Azure.Datalake;
-    using Microsoft.Azure.IIoT.Azure.Datalake.Runtime;
+    using Microsoft.Azure.IIoT.Azure.ActiveDirectory.Utils;
     using Microsoft.Azure.IIoT.Utils;
     using Microsoft.Azure.IIoT.Exceptions;
+    using Microsoft.Azure.IIoT;
     using Microsoft.Azure.KeyVault;
     using Microsoft.Azure.KeyVault.Models;
     using Microsoft.Azure.KeyVault.WebKey;
     using Microsoft.Azure.Storage;
     using Microsoft.Azure.Storage.Blob;
     using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
     using Microsoft.AspNetCore.DataProtection;
     using Serilog;
     using System;
@@ -128,7 +128,7 @@ namespace Microsoft.Azure.IIoT.AspNetCore.Auth {
         /// <summary>
         /// Data protection default configuration
         /// </summary>
-        internal sealed class DataProtectionConfig : ConfigBase, IKeyVaultConfig, IBlobConfig  {
+        internal sealed class DataProtectionConfig : ConfigBase, IKeyVaultConfig, IStorageConfig  {
 
             private const string kKeyVaultKeyDataProtectionDefault = "dataprotection";
             private const string kBlobStorageContainerDataProtectionDefault = "dataprotection";
@@ -165,11 +165,11 @@ namespace Microsoft.Azure.IIoT.AspNetCore.Auth {
             /// <param name="configuration"></param>
             public DataProtectionConfig(IConfiguration configuration) :
                 base(configuration) {
-                _stg = new BlobConfig(configuration);
+                _stg = new StorageConfig(configuration);
                 _kv = new KeyVaultConfig(configuration);
             }
 
-            private readonly BlobConfig _stg;
+            private readonly StorageConfig _stg;
             private readonly KeyVaultConfig _kv;
         }
     }

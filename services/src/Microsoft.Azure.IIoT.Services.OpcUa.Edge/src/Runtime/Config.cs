@@ -18,30 +18,17 @@ namespace Microsoft.Azure.IIoT.Platform.Edge.Gateway.Service.Runtime {
     using Microsoft.Azure.IIoT.Azure.AppInsights.Runtime;
     using Microsoft.Azure.IIoT.Azure.IoTHub.Runtime;
     using Microsoft.Azure.IIoT.Azure.IoTHub;
-    using Microsoft.Azure.IIoT.Storage;
-    using Microsoft.Azure.IIoT.Azure.CosmosDb;
-    using Microsoft.Azure.IIoT.Azure.CosmosDb.Runtime;
     using Microsoft.Extensions.Configuration;
 
     /// <summary>
     /// Common web service configuration aggregation
     /// </summary>
     public class Config : DiagnosticsConfig, IWebHostConfig, IIoTHubConfig,
-        ICorsConfig, IOpenApiConfig, ICosmosDbConfig,
-        IItemContainerConfig, IForwardedHeadersConfig, IRoleConfig,
+        ICorsConfig, IOpenApiConfig, IForwardedHeadersConfig, IRoleConfig,
         IAppInsightsConfig {
 
         /// <inheritdoc/>
         public string InstrumentationKey => _ai.InstrumentationKey;
-
-        /// <inheritdoc/>
-        public string DbConnectionString => _cosmos.DbConnectionString;
-        /// <inheritdoc/>
-        public int? ThroughputUnits => _cosmos.ThroughputUnits;
-        /// <inheritdoc/>
-        public string ContainerName => "iiot_opc";
-        /// <inheritdoc/>
-        public string DatabaseName => "iiot_opc";
 
         /// <inheritdoc/>
         public string IoTHubConnString => _hub.IoTHubConnString;
@@ -94,7 +81,6 @@ namespace Microsoft.Azure.IIoT.Platform.Edge.Gateway.Service.Runtime {
             _host = new WebHostConfig(configuration);
             _hub = new IoTHubConfig(configuration);
             _cors = new CorsConfig(configuration);
-            _cosmos = new CosmosDbConfig(configuration);
             _fh = new ForwardedHeadersConfig(configuration);
             _ai = new AppInsightsConfig(configuration);
         }
@@ -103,7 +89,6 @@ namespace Microsoft.Azure.IIoT.Platform.Edge.Gateway.Service.Runtime {
         private readonly OpenApiConfig _openApi;
         private readonly WebHostConfig _host;
         private readonly CorsConfig _cors;
-        private readonly CosmosDbConfig _cosmos;
         private readonly IoTHubConfig _hub;
         private readonly ForwardedHeadersConfig _fh;
     }

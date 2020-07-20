@@ -190,8 +190,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platfo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Twin\tests\Microsoft.Azure.IIoT.Platform.Twin.Tests.csproj", "{B5D8D779-4939-4884-A61C-47C1BC966E05}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Edge", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge\src\Microsoft.Azure.IIoT.Platform.Edge.csproj", "{282789C2-9723-45FB-B3F4-BD57B0B890AB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Tests", "modules\src\Microsoft.Azure.IIoT.Modules.OpcUa.Publisher\tests\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Tests.csproj", "{6EA8119D-2ACB-4CCF-A8B6-D95A02525E45}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Publisher\tests\Microsoft.Azure.IIoT.Platform.Publisher.Tests.csproj", "{262ECCD0-BFD0-4425-BC54-00D5E0673C35}"
@@ -242,7 +240,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{83574215-292
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{5287338D-F507-410D-AABD-79C8D9D5BF07}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery,Edge", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge.Discovery\src\Microsoft.Azure.IIoT.Platform.Discovery,Edge.csproj", "{EDFE3D0F-37CB-461E-BCE9-B55C5DD78FC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Edge", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge.Discovery\src\Microsoft.Azure.IIoT.Platform.Discovery.Edge.csproj", "{EDFE3D0F-37CB-461E-BCE9-B55C5DD78FC9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge.Publisher\tests\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Tests.csproj", "{F9B3886C-449F-4F9D-A882-F6EA4639653D}"
 EndProject
@@ -279,8 +277,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.AspNetCore", "common\src\Microsoft.Azure.IIoT.Auth.ActiveDirectory.Web\src\Microsoft.Azure.IIoT.Azure.AspNetCore.csproj", "{EF5D50C9-94F9-4526-8D43-78BB60E4F365}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.Monitor", "common\src\Microsoft.Azure.IIoT.Diagnostics.AppInsights\src\Microsoft.Azure.IIoT.Azure.Monitor.csproj", "{1A9B0F62-8A1C-4D69-BC79-A87F31239666}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Edge.Tests", "common\src\Microsoft.Azure.IIoT.Platform.Edge.Tunnel\tests\Microsoft.Azure.IIoT.Platform.Edge.Tests.csproj", "{CF50BCD7-8D16-488E-A3AA-F3AAF3574405}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -938,14 +934,6 @@ Global
 		{B5D8D779-4939-4884-A61C-47C1BC966E05}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B5D8D779-4939-4884-A61C-47C1BC966E05}.Release|x64.ActiveCfg = Release|Any CPU
 		{B5D8D779-4939-4884-A61C-47C1BC966E05}.Release|x64.Build.0 = Release|Any CPU
-		{282789C2-9723-45FB-B3F4-BD57B0B890AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{282789C2-9723-45FB-B3F4-BD57B0B890AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{282789C2-9723-45FB-B3F4-BD57B0B890AB}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{282789C2-9723-45FB-B3F4-BD57B0B890AB}.Debug|x64.Build.0 = Debug|Any CPU
-		{282789C2-9723-45FB-B3F4-BD57B0B890AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{282789C2-9723-45FB-B3F4-BD57B0B890AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{282789C2-9723-45FB-B3F4-BD57B0B890AB}.Release|x64.ActiveCfg = Release|Any CPU
-		{282789C2-9723-45FB-B3F4-BD57B0B890AB}.Release|x64.Build.0 = Release|Any CPU
 		{6EA8119D-2ACB-4CCF-A8B6-D95A02525E45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6EA8119D-2ACB-4CCF-A8B6-D95A02525E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EA8119D-2ACB-4CCF-A8B6-D95A02525E45}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -1050,14 +1038,6 @@ Global
 		{1A9B0F62-8A1C-4D69-BC79-A87F31239666}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A9B0F62-8A1C-4D69-BC79-A87F31239666}.Release|x64.ActiveCfg = Release|Any CPU
 		{1A9B0F62-8A1C-4D69-BC79-A87F31239666}.Release|x64.Build.0 = Release|Any CPU
-		{CF50BCD7-8D16-488E-A3AA-F3AAF3574405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF50BCD7-8D16-488E-A3AA-F3AAF3574405}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF50BCD7-8D16-488E-A3AA-F3AAF3574405}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{CF50BCD7-8D16-488E-A3AA-F3AAF3574405}.Debug|x64.Build.0 = Debug|Any CPU
-		{CF50BCD7-8D16-488E-A3AA-F3AAF3574405}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF50BCD7-8D16-488E-A3AA-F3AAF3574405}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF50BCD7-8D16-488E-A3AA-F3AAF3574405}.Release|x64.ActiveCfg = Release|Any CPU
-		{CF50BCD7-8D16-488E-A3AA-F3AAF3574405}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1152,7 +1132,6 @@ Global
 		{2923AD3C-A604-410C-93E9-E52DF312D55E} = {BBEE26AC-8733-469B-B816-0A54EA99FC59}
 		{422C4B02-BC9F-4494-893F-7214F8FB17E1} = {83574215-2928-4D27-9A0E-3987C07F9A80}
 		{B5D8D779-4939-4884-A61C-47C1BC966E05} = {31F3A559-EB5A-4695-A389-23ADD3FB4A39}
-		{282789C2-9723-45FB-B3F4-BD57B0B890AB} = {FEE95825-2E34-45AF-BDED-52F9C7412BF5}
 		{6EA8119D-2ACB-4CCF-A8B6-D95A02525E45} = {43E69B85-2743-48EE-8FAE-A59F070E21D2}
 		{262ECCD0-BFD0-4425-BC54-00D5E0673C35} = {43E69B85-2743-48EE-8FAE-A59F070E21D2}
 		{1185F94F-1DD9-4ECA-80D0-D194B73D2366} = {0169C791-7984-4DC1-8325-E9B9604CC3DE}
@@ -1190,7 +1169,6 @@ Global
 		{5B396DAD-5C4D-4033-A168-2EE4E4A87826} = {2132F325-07C2-4D0B-B8EF-9ACC54BD2CBB}
 		{EF5D50C9-94F9-4526-8D43-78BB60E4F365} = {1185F94F-1DD9-4ECA-80D0-D194B73D2366}
 		{1A9B0F62-8A1C-4D69-BC79-A87F31239666} = {1185F94F-1DD9-4ECA-80D0-D194B73D2366}
-		{CF50BCD7-8D16-488E-A3AA-F3AAF3574405} = {BBEE26AC-8733-469B-B816-0A54EA99FC59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F09EFCEA-59F6-4A16-9CB6-7E865A3F62D8}

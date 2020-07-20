@@ -6,15 +6,15 @@
 namespace Microsoft.Azure.IIoT.Platform.Twin.Service {
     using Microsoft.Azure.IIoT.Platform.Twin.Service.Runtime;
     using Microsoft.Azure.IIoT.Platform.Twin.Service.Auth;
-    using Microsoft.Azure.IIoT.Platform.Twin.Deploy;
     using Microsoft.Azure.IIoT.Platform.Twin.Clients;
     using Microsoft.Azure.IIoT.Platform.Twin.Api.Clients;
     using Microsoft.Azure.IIoT.Platform.Publisher.Api.Clients;
     using Microsoft.Azure.IIoT.Azure.LogAnalytics.Runtime;
     using Microsoft.Azure.IIoT.Azure.AppInsights;
+    using Microsoft.Azure.IIoT.Azure.IoTHub;
+    using Microsoft.Azure.IIoT.Azure.IoTHub.Deploy;
     using Microsoft.Azure.IIoT.Auth;
     using Microsoft.Azure.IIoT.Http.Default;
-    using Microsoft.Azure.IIoT.Azure.IoTHub;
     using Microsoft.Azure.IIoT.Rpc.Default;
     using Microsoft.Azure.IIoT.Serializers;
     using Microsoft.Azure.IIoT.Utils;
@@ -202,7 +202,7 @@ namespace Microsoft.Azure.IIoT.Platform.Twin.Service {
                 .AsImplementedInterfaces().SingleInstance();
 
             // Edge deployment
-            builder.RegisterType<IoTHubSupervisorDeployment>()
+            builder.RegisterType<IoTEdgeSupervisorDeployment>()
                 .AsImplementedInterfaces().SingleInstance();
 
             // ... and auto start

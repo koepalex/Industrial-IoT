@@ -4,13 +4,12 @@
 // ------------------------------------------------------------
 
 namespace Microsoft.Azure.IIoT.Azure.EventHub.Processor {
-    using Microsoft.Azure.IIoT.Azure.Datalake;
     using System;
 
     /// <summary>
     /// Eventprocessor host configuration
     /// </summary>
-    public interface IEventProcessorHostConfig : IBlobConfig {
+    public interface IEventProcessorHostConfig : IStorageConfig {
 
         /// <summary>
         /// Receive batch size
