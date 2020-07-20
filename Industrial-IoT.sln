@@ -3,87 +3,87 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module", "modules\src\Microsoft.Azure.IIoT.Modules.OpcUa.Publisher\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.csproj", "{F0B9B85E-9D2E-46B2-9986-5D98B21904EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module", "modules\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.csproj", "{F0B9B85E-9D2E-46B2-9986-5D98B21904EE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Edge.Gateway.Service", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Edge\src\Microsoft.Azure.IIoT.Platform.Edge.Gateway.Service.csproj", "{4073F4E2-FAA8-4509-A47A-855D527588FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Edge.Gateway.Service", "services\src\Microsoft.Azure.IIoT.Platform.Edge.Gateway.Service\src\Microsoft.Azure.IIoT.Platform.Edge.Gateway.Service.csproj", "{4073F4E2-FAA8-4509-A47A-855D527588FC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Cli", "modules\src\Microsoft.Azure.IIoT.Modules.OpcUa.Publisher\cli\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Cli.csproj", "{7FEE3528-FE99-4F1A-91C0-DCFBC9236871}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Cli", "modules\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module\cli\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Cli.csproj", "{7FEE3528-FE99-4F1A-91C0-DCFBC9236871}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api.Cli", "api\src\Microsoft.Azure.IIoT.Api\cli\Microsoft.Azure.IIoT.Platform.Api.Cli.csproj", "{D14C979A-E41B-459B-97CE-E3DA62E02369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api.Cli", "api\src\Microsoft.Azure.IIoT.Platform.Api.Internal\cli\Microsoft.Azure.IIoT.Platform.Api.Cli.csproj", "{D14C979A-E41B-459B-97CE-E3DA62E02369}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.Cli", "modules\src\Microsoft.Azure.IIoT.Modules.OpcUa.Twin\cli\Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.Cli.csproj", "{42B6F4CC-01B0-496B-A8FB-69908691DBEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.Cli", "modules\src\Microsoft.Azure.IIoT.Platform.Twin.Edge.Module\cli\Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.Cli.csproj", "{42B6F4CC-01B0-496B-A8FB-69908691DBEF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Service", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Twin\src\Microsoft.Azure.IIoT.Platform.Twin.Service.csproj", "{7840E38C-D435-432B-A5B4-2393D1A5D21A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Service", "services\src\Microsoft.Azure.IIoT.Platform.Twin.Service\src\Microsoft.Azure.IIoT.Platform.Twin.Service.csproj", "{7840E38C-D435-432B-A5B4-2393D1A5D21A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Service", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Registry\src\Microsoft.Azure.IIoT.Platform.Registry.Service.csproj", "{34BF73AA-89A3-4E10-A1AC-2360A93143FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Service", "services\src\Microsoft.Azure.IIoT.Platform.Registry.Service\src\Microsoft.Azure.IIoT.Platform.Registry.Service.csproj", "{34BF73AA-89A3-4E10-A1AC-2360A93143FE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Sync.Service", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Registry.Sync\src\Microsoft.Azure.IIoT.Platform.Registry.Sync.Service.csproj", "{98CC86E7-6BD0-4B5A-B71B-C8F57C98E081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Sync.Service", "services\src\Microsoft.Azure.IIoT.Platform.Registry.Sync.Service\src\Microsoft.Azure.IIoT.Platform.Registry.Sync.Service.csproj", "{98CC86E7-6BD0-4B5A-B71B-C8F57C98E081}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Vault.Service", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Vault\src\Microsoft.Azure.IIoT.Platform.Vault.Service.csproj", "{039B213A-5930-475D-B3C0-FA15AF6CD631}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Vault.Service", "services\src\Microsoft.Azure.IIoT.Platform.Vault.Service\src\Microsoft.Azure.IIoT.Platform.Vault.Service.csproj", "{039B213A-5930-475D-B3C0-FA15AF6CD631}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Ua.Service", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Twin.Gateway\src\Microsoft.Azure.IIoT.Platform.Twin.Ua.Service.csproj", "{A8C4FFE0-20D8-40F4-8B9F-26FE9D013E2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Ua.Service", "services\src\Microsoft.Azure.IIoT.Platform.Twin.Ua.Service\src\Microsoft.Azure.IIoT.Platform.Twin.Ua.Service.csproj", "{A8C4FFE0-20D8-40F4-8B9F-26FE9D013E2F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.History.Service", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Twin.History\src\Microsoft.Azure.IIoT.Platform.History.Service.csproj", "{5133BBA0-2F9F-447F-925A-87AD387F07D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.History.Service", "services\src\Microsoft.Azure.IIoT.Platform.History.Service\src\Microsoft.Azure.IIoT.Platform.History.Service.csproj", "{5133BBA0-2F9F-447F-925A-87AD387F07D2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Service", "services\src\Microsoft.Azure.IIoT.Services.All\src\Microsoft.Azure.IIoT.Platform.Service.csproj", "{D2DB7A83-1682-4A01-857F-CE415287ACF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Service", "services\src\Microsoft.Azure.IIoT.Platform.Service\src\Microsoft.Azure.IIoT.Platform.Service.csproj", "{D2DB7A83-1682-4A01-857F-CE415287ACF0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api.Internal", "api\src\Microsoft.Azure.IIoT.Api\src\Microsoft.Azure.IIoT.Platform.Api.Internal.csproj", "{C42023DA-F375-401B-BF9B-D20286311455}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api.Internal", "api\src\Microsoft.Azure.IIoT.Platform.Api.Internal\src\Microsoft.Azure.IIoT.Platform.Api.Internal.csproj", "{C42023DA-F375-401B-BF9B-D20286311455}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.History.Api", "api\src\Microsoft.Azure.IIoT.OpcUa.Api.History\src\Microsoft.Azure.IIoT.Platform.History.Api.csproj", "{4338CF8A-5298-4C8F-942F-D20E7255BEA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.History.Api", "api\src\Microsoft.Azure.IIoT.Platform.History.Api\src\Microsoft.Azure.IIoT.Platform.History.Api.csproj", "{4338CF8A-5298-4C8F-942F-D20E7255BEA8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Vault.Api", "api\src\Microsoft.Azure.IIoT.OpcUa.Api.Vault\src\Microsoft.Azure.IIoT.Platform.Vault.Api.csproj", "{7137B8E7-A508-4917-A6FC-9CB5CCF8F9EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Vault.Api", "api\src\Microsoft.Azure.IIoT.Platform.Vault.Api\src\Microsoft.Azure.IIoT.Platform.Vault.Api.csproj", "{7137B8E7-A508-4917-A6FC-9CB5CCF8F9EA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Api", "api\src\Microsoft.Azure.IIoT.OpcUa.Api.Registry\src\Microsoft.Azure.IIoT.Platform.Registry.Api.csproj", "{D059B44D-8C53-4B03-BE3D-5E50BA51A93A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Api", "api\src\Microsoft.Azure.IIoT.Platform.Registry.Api\src\Microsoft.Azure.IIoT.Platform.Registry.Api.csproj", "{D059B44D-8C53-4B03-BE3D-5E50BA51A93A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Api", "api\src\Microsoft.Azure.IIoT.OpcUa.Api.Twin\src\Microsoft.Azure.IIoT.Platform.Twin.Api.csproj", "{8C90549C-BB32-4A32-A50C-62C7118B5AE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Api", "api\src\Microsoft.Azure.IIoT.Platform.Twin.Api\src\Microsoft.Azure.IIoT.Platform.Twin.Api.csproj", "{8C90549C-BB32-4A32-A50C-62C7118B5AE7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge.Module", "modules\src\Microsoft.Azure.IIoT.Modules.OpcUa.Twin\src\Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.csproj", "{5709535C-A93D-4D03-8748-5F202C2A05EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge.Module", "modules\src\Microsoft.Azure.IIoT.Platform.Twin.Edge.Module\src\Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.csproj", "{5709535C-A93D-4D03-8748-5F202C2A05EF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.Tests", "modules\src\Microsoft.Azure.IIoT.Modules.OpcUa.Twin\tests\Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.Tests.csproj", "{B829F5E5-E906-4EFC-86D5-CB74C34194B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.Tests", "modules\src\Microsoft.Azure.IIoT.Platform.Twin.Edge.Module\tests\Microsoft.Azure.IIoT.Platform.Twin.Edge.Module.Tests.csproj", "{B829F5E5-E906-4EFC-86D5-CB74C34194B2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Abstractions", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa\src\Microsoft.Azure.IIoT.Platform.Abstractions.csproj", "{8F49F047-9BA6-44EF-84BF-2C2C140818E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Abstractions", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Abstractions\src\Microsoft.Azure.IIoT.Platform.Abstractions.csproj", "{8F49F047-9BA6-44EF-84BF-2C2C140818E3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.OpcUa.Testing", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Testing\src\Microsoft.Azure.IIoT.Platform.OpcUa.Testing.csproj", "{C2F3B451-2971-4D8F-AAA2-8481A251AA3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.OpcUa.Testing", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.OpcUa.Testing\src\Microsoft.Azure.IIoT.Platform.OpcUa.Testing.csproj", "{C2F3B451-2971-4D8F-AAA2-8481A251AA3F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Registry\src\Microsoft.Azure.IIoT.Platform.Registry.csproj", "{8A464F2F-C1C0-4DDF-AE47-015C4545C609}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Registry\src\Microsoft.Azure.IIoT.Platform.Registry.csproj", "{8A464F2F-C1C0-4DDF-AE47-015C4545C609}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Twin\src\Microsoft.Azure.IIoT.Platform.Twin.csproj", "{5261EDEA-6A3B-48A7-8895-89A4A6F15B2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Twin\src\Microsoft.Azure.IIoT.Platform.Twin.csproj", "{5261EDEA-6A3B-48A7-8895-89A4A6F15B2F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.OpcUa", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Protocol\src\Microsoft.Azure.IIoT.Platform.OpcUa.csproj", "{F18FDD31-4310-40C6-9E8A-E98E03721939}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.OpcUa", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.OpcUa\src\Microsoft.Azure.IIoT.Platform.OpcUa.csproj", "{F18FDD31-4310-40C6-9E8A-E98E03721939}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Vault", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Vault\src\Microsoft.Azure.IIoT.Platform.Vault.csproj", "{33575581-15C8-4560-A768-B441D53A088A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Vault", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Vault\src\Microsoft.Azure.IIoT.Platform.Vault.csproj", "{33575581-15C8-4560-A768-B441D53A088A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Ua", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Gateway\src\Microsoft.Azure.IIoT.Platform.Twin.Ua.csproj", "{2592A18D-7E79-4CCC-AF7B-D5A59AFFEA5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Ua", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Twin.Ua\src\Microsoft.Azure.IIoT.Platform.Twin.Ua.csproj", "{2592A18D-7E79-4CCC-AF7B-D5A59AFFEA5D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Abstractions", "common\src\Microsoft.Azure.IIoT.Abstractions\src\Microsoft.Azure.IIoT.Abstractions.csproj", "{F34353F1-AB1D-4740-9D91-D266E46F6FD6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Core", "common\src\Microsoft.Azure.IIoT.Core\src\Microsoft.Azure.IIoT.Core.csproj", "{BFD75963-2B4D-431B-AB3F-4172DCADD0A4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.IoTHub.Mock", "common\src\Microsoft.Azure.IIoT.Hub.Mock\src\Microsoft.Azure.IIoT.Azure.IoTHub.Mock.csproj", "{A4D23250-B507-4C71-8DED-C19D43950C91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.IoTHub.Mock", "common\src\Microsoft.Azure.IIoT.Azure.IoTHub.Mock\src\Microsoft.Azure.IIoT.Azure.IoTHub.Mock.csproj", "{A4D23250-B507-4C71-8DED-C19D43950C91}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.IoTHub", "common\src\Microsoft.Azure.IIoT.Hub.Service.Client\src\Microsoft.Azure.IIoT.Azure.IoTHub.csproj", "{D8E43A34-8F5B-4CF5-A319-36198E035240}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.IoTHub", "common\src\Microsoft.Azure.IIoT.Azure.IoTHub\src\Microsoft.Azure.IIoT.Azure.IoTHub.csproj", "{D8E43A34-8F5B-4CF5-A319-36198E035240}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.AspNetCore", "common\src\Microsoft.Azure.IIoT.AspNetCore\src\Microsoft.Azure.IIoT.AspNetCore.csproj", "{7C3C842E-A979-4118-B322-7F7403835E23}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.EventHub.Processor", "common\src\Microsoft.Azure.IIoT.Hub.Processor\src\Microsoft.Azure.IIoT.Azure.EventHub.Processor.csproj", "{CAF3D563-E700-404B-B4F3-C683F5C35EAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.EventHub.Processor", "common\src\Microsoft.Azure.IIoT.Azure.EventHub.Processor\src\Microsoft.Azure.IIoT.Azure.EventHub.Processor.csproj", "{CAF3D563-E700-404B-B4F3-C683F5C35EAB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.ActiveDirectory", "common\src\Microsoft.Azure.IIoT.Auth.ActiveDirectory\src\Microsoft.Azure.IIoT.Azure.ActiveDirectory.csproj", "{B80792C1-F31E-4D21-8D26-8D69519678C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.ActiveDirectory", "common\src\Microsoft.Azure.IIoT.Azure.ActiveDirectory\src\Microsoft.Azure.IIoT.Azure.ActiveDirectory.csproj", "{B80792C1-F31E-4D21-8D26-8D69519678C0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Cryptography", "common\src\Microsoft.Azure.IIoT.Crypto\src\Microsoft.Azure.IIoT.Cryptography.csproj", "{A69DC376-C0E5-4084-8FC8-A69077D92F04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Cryptography", "common\src\Microsoft.Azure.IIoT.Cryptography\src\Microsoft.Azure.IIoT.Cryptography.csproj", "{A69DC376-C0E5-4084-8FC8-A69077D92F04}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.History.Service.Tests", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Twin.History\tests\Microsoft.Azure.IIoT.Platform.History.Service.Tests.csproj", "{18426423-8BC9-4661-AEA2-DB41C3E88D6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.History.Service.Tests", "services\src\Microsoft.Azure.IIoT.Platform.History.Service\tests\Microsoft.Azure.IIoT.Platform.History.Service.Tests.csproj", "{18426423-8BC9-4661-AEA2-DB41C3E88D6E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Service.Tests", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Twin\tests\Microsoft.Azure.IIoT.Platform.Twin.Service.Tests.csproj", "{B3266A37-F0A1-449F-943A-6C4DF35C7953}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Service.Tests", "services\src\Microsoft.Azure.IIoT.Platform.Twin.Service\tests\Microsoft.Azure.IIoT.Platform.Twin.Service.Tests.csproj", "{B3266A37-F0A1-449F-943A-6C4DF35C7953}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Service.Tests", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Registry\tests\Microsoft.Azure.IIoT.Platform.Registry.Service.Tests.csproj", "{A6172B18-13C4-4FE0-9A19-21CA7D556CBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Service.Tests", "services\src\Microsoft.Azure.IIoT.Platform.Registry.Service\tests\Microsoft.Azure.IIoT.Platform.Registry.Service.Tests.csproj", "{A6172B18-13C4-4FE0-9A19-21CA7D556CBB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Vault.Service.Tests", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Vault\tests\Microsoft.Azure.IIoT.Platform.Vault.Service.Tests.csproj", "{91DE59BF-D3D9-4A86-A767-E33DDBB61476}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Vault.Service.Tests", "services\src\Microsoft.Azure.IIoT.Platform.Vault.Service\tests\Microsoft.Azure.IIoT.Platform.Vault.Service.Tests.csproj", "{91DE59BF-D3D9-4A86-A767-E33DDBB61476}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Registry\tests\Microsoft.Azure.IIoT.Platform.Registry.Tests.csproj", "{FE3E720B-0C94-4883-AD71-7620F0660FAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Registry\tests\Microsoft.Azure.IIoT.Platform.Registry.Tests.csproj", "{FE3E720B-0C94-4883-AD71-7620F0660FAB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.OpcUa.Testing.Cli", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Testing\cli\Microsoft.Azure.IIoT.OpcUa.Testing.Cli.csproj", "{23029DA0-F9B3-46CC-B279-1BBA855D1996}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.OpcUa.Testing.Cli", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.OpcUa.Testing\cli\Microsoft.Azure.IIoT.Platform.OpcUa.Testing.Cli.csproj", "{23029DA0-F9B3-46CC-B279-1BBA855D1996}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.OpcUa.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Protocol\tests\Microsoft.Azure.IIoT.Platform.OpcUa.Tests.csproj", "{CE5A3795-B3A9-4AEA-9319-B594E2794A0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.OpcUa.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.OpcUa\tests\Microsoft.Azure.IIoT.Platform.OpcUa.Tests.csproj", "{CE5A3795-B3A9-4AEA-9319-B594E2794A0F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Core.Tests", "common\src\Microsoft.Azure.IIoT.Core\tests\Microsoft.Azure.IIoT.Core.Tests.csproj", "{C093A5D1-56DB-4A54-9E81-4A644B6238EF}"
 EndProject
@@ -110,65 +110,65 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Cryptography.Tests", "common\src\Microsoft.Azure.IIoT.Crypto\tests\Microsoft.Azure.IIoT.Cryptography.Tests.csproj", "{BA5EDBB9-331F-486B-8724-2E23DC3EEADA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Cryptography.Tests", "common\src\Microsoft.Azure.IIoT.Cryptography\tests\Microsoft.Azure.IIoT.Cryptography.Tests.csproj", "{BA5EDBB9-331F-486B-8724-2E23DC3EEADA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module", "modules\src\Microsoft.Azure.IIoT.Modules.Discovery\src\Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module.csproj", "{EB0E6E11-3C34-4BDE-8020-5324BCEB2C06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module", "modules\src\Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module\src\Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module.csproj", "{EB0E6E11-3C34-4BDE-8020-5324BCEB2C06}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module.Cli", "modules\src\Microsoft.Azure.IIoT.Modules.Discovery\cli\Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module.Cli.csproj", "{9CDDE537-2D55-4A7E-947D-7FA3EC87B72A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module.Cli", "modules\src\Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module\cli\Microsoft.Azure.IIoT.Platform.Discovery.Edge.Module.Cli.csproj", "{9CDDE537-2D55-4A7E-947D-7FA3EC87B72A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Subscriber.Service", "services\src\Microsoft.Azure.IIoT.Services.Processor.Telemetry\src\Microsoft.Azure.IIoT.Platform.Subscriber.Service.csproj", "{5A2F6804-8AC6-49FE-82FA-9DD8F4CE38A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Subscriber.Service", "services\src\Microsoft.Azure.IIoT.Platform.Subscriber.Service\src\Microsoft.Azure.IIoT.Platform.Subscriber.Service.csproj", "{5A2F6804-8AC6-49FE-82FA-9DD8F4CE38A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api.Events.Service", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Events\src\Microsoft.Azure.IIoT.Platform.Api.Events.Service.csproj", "{C304DF8A-756F-4EAC-B7C5-967C3152EDFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api.Events.Service", "services\src\Microsoft.Azure.IIoT.Platform.Api.Events.Service\src\Microsoft.Azure.IIoT.Platform.Api.Events.Service.csproj", "{C304DF8A-756F-4EAC-B7C5-967C3152EDFF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Publisher\src\Microsoft.Azure.IIoT.Platform.Publisher.csproj", "{3C648AC0-1E6F-4327-9D64-75851A5CBF40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Publisher\src\Microsoft.Azure.IIoT.Platform.Publisher.csproj", "{3C648AC0-1E6F-4327-9D64-75851A5CBF40}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Api", "api\src\Microsoft.Azure.IIoT.OpcUa.Api.Publisher\src\Microsoft.Azure.IIoT.Platform.Publisher.Api.csproj", "{7B86DABE-2A93-4A9A-83BC-83643F5E2B1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Api", "api\src\Microsoft.Azure.IIoT.Platform.Publisher.Api\src\Microsoft.Azure.IIoT.Platform.Publisher.Api.csproj", "{7B86DABE-2A93-4A9A-83BC-83643F5E2B1E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Service", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Publisher\src\Microsoft.Azure.IIoT.Platform.Publisher.Service.csproj", "{C7104A08-2E91-44D2-B7DF-253ECE3DC493}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Service", "services\src\Microsoft.Azure.IIoT.Platform.Publisher.Service\src\Microsoft.Azure.IIoT.Platform.Publisher.Service.csproj", "{C7104A08-2E91-44D2-B7DF-253ECE3DC493}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.CosmosDb", "common\src\Microsoft.Azure.IIoT.Storage.CosmosDb\src\Microsoft.Azure.IIoT.Azure.CosmosDb.csproj", "{85C11EF0-B2F8-49C5-BC6D-476000B8EE75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.CosmosDb", "common\src\Microsoft.Azure.IIoT.Azure.CosmosDb\src\Microsoft.Azure.IIoT.Azure.CosmosDb.csproj", "{85C11EF0-B2F8-49C5-BC6D-476000B8EE75}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.Datalake", "common\src\Microsoft.Azure.IIoT.Storage.Datalake\src\Microsoft.Azure.IIoT.Azure.Datalake.csproj", "{EF2CC697-A505-4EF5-8399-5DD53A6DDD0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.Datalake", "common\src\Microsoft.Azure.IIoT.Azure.Datalake\src\Microsoft.Azure.IIoT.Azure.Datalake.csproj", "{EF2CC697-A505-4EF5-8399-5DD53A6DDD0C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.SignalR", "common\src\Microsoft.Azure.IIoT.Messaging.SignalR\src\Microsoft.Azure.IIoT.Azure.SignalR.csproj", "{483F0742-F21F-4BD8-8BE4-26FB232DA91B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.SignalR", "common\src\Microsoft.Azure.IIoT.Azure.SignalR\src\Microsoft.Azure.IIoT.Azure.SignalR.csproj", "{483F0742-F21F-4BD8-8BE4-26FB232DA91B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.ServiceBus", "common\src\Microsoft.Azure.IIoT.Messaging.ServiceBus\src\Microsoft.Azure.IIoT.Azure.ServiceBus.csproj", "{BA045AE7-E1A0-4DCC-BD99-B1893ECD2DBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.ServiceBus", "common\src\Microsoft.Azure.IIoT.Azure.ServiceBus\src\Microsoft.Azure.IIoT.Azure.ServiceBus.csproj", "{BA045AE7-E1A0-4DCC-BD99-B1893ECD2DBF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.EventHub", "common\src\Microsoft.Azure.IIoT.Messaging.EventHub\src\Microsoft.Azure.IIoT.Azure.EventHub.csproj", "{BE047C80-A3E6-46A4-AA4C-DA4E0DD5618B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.EventHub", "common\src\Microsoft.Azure.IIoT.Azure.EventHub\src\Microsoft.Azure.IIoT.Azure.EventHub.csproj", "{BE047C80-A3E6-46A4-AA4C-DA4E0DD5618B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.KeyVault", "common\src\Microsoft.Azure.IIoT.Crypto.KeyVault\src\Microsoft.Azure.IIoT.Azure.KeyVault.csproj", "{608CA395-CBE8-4A26-9F4D-732F922E6827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.KeyVault", "common\src\Microsoft.Azure.IIoT.Azure.KeyVault\src\Microsoft.Azure.IIoT.Azure.KeyVault.csproj", "{608CA395-CBE8-4A26-9F4D-732F922E6827}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.KeyVault.Tests", "common\src\Microsoft.Azure.IIoT.Crypto.KeyVault\tests\Microsoft.Azure.IIoT.Azure.KeyVault.Tests.csproj", "{919FC959-C38B-44F5-80B4-4E6273180852}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.KeyVault.Tests", "common\src\Microsoft.Azure.IIoT.Azure.KeyVault\tests\Microsoft.Azure.IIoT.Azure.KeyVault.Tests.csproj", "{919FC959-C38B-44F5-80B4-4E6273180852}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.AspNetCore.OpenApi", "common\src\Microsoft.Azure.IIoT.AspNetCore.OpenApi\src\Microsoft.Azure.IIoT.AspNetCore.OpenApi.csproj", "{864ED2E6-8D92-4FFC-9AE6-6B5E551D79E0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Auth.OpenId", "common\src\Microsoft.Azure.IIoT.Auth.OpenId\src\Microsoft.Azure.IIoT.Auth.OpenId.csproj", "{4F6123E1-17C4-4541-AA85-77631498785B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.IoTEdge", "common\src\Microsoft.Azure.IIoT.Hub.Module.Client\src\Microsoft.Azure.IIoT.Azure.IoTEdge.csproj", "{F4671EE3-ED95-4F00-B047-9A2D0768EDAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.IoTEdge", "common\src\Microsoft.Azure.IIoT.Azure.IoTEdge\src\Microsoft.Azure.IIoT.Azure.IoTEdge.csproj", "{F4671EE3-ED95-4F00-B047-9A2D0768EDAB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Http.SignalR", "common\src\Microsoft.Azure.IIoT.Http.SignalR\src\Microsoft.Azure.IIoT.Http.SignalR.csproj", "{57230099-14A3-4B5D-9F8A-BD93C6D6919A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.App", "samples\src\Microsoft.Azure.IIoT.App\src\Microsoft.Azure.IIoT.App.csproj", "{52663E78-E255-4263-B4D9-84B06AA8241E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Subscriber", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Subscriber\src\Microsoft.Azure.IIoT.Platform.Subscriber.csproj", "{CD2F90BC-0FA9-4737-9F15-47EF06489423}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Subscriber", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Subscriber\src\Microsoft.Azure.IIoT.Platform.Subscriber.csproj", "{CD2F90BC-0FA9-4737-9F15-47EF06489423}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.Deployment", "deploy\src\Microsoft.Azure.IIoT.Deployment\Microsoft.Azure.IIoT.Azure.Deployment.csproj", "{4676D2B5-492B-47FF-9AD8-CB546CA0CEEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.Deployment", "deploy\src\Microsoft.Azure.IIoT.Azure.Deployment\Microsoft.Azure.IIoT.Azure.Deployment.csproj", "{4676D2B5-492B-47FF-9AD8-CB546CA0CEEF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{24CC83C2-F144-4EB9-9C7E-48406B1E2932}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Core.Cli", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Registry\cli\Microsoft.Azure.IIoT.Platform.Registry.Core.Cli.csproj", "{D026C33E-F595-4B36-AB29-FD39AA3C18A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Registry.Cli", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Registry\cli\Microsoft.Azure.IIoT.Platform.Registry.Cli.csproj", "{D026C33E-F595-4B36-AB29-FD39AA3C18A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Edge.Events.Service", "services\src\Microsoft.Azure.IIoT.Services.Processor.Events\src\Microsoft.Azure.IIoT.Platform.Edge.Events.Service.csproj", "{BD256FCA-20DB-4FE4-8664-DAE7E0883C69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Edge.Events.Service", "services\src\Microsoft.Azure.IIoT.Platform.Edge.Events.Service\src\Microsoft.Azure.IIoT.Platform.Edge.Events.Service.csproj", "{BD256FCA-20DB-4FE4-8664-DAE7E0883C69}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Subscriber.Cdm.Service", "services\src\Microsoft.Azure.IIoT.Services.Processor.Telemetry.Cdm\src\Microsoft.Azure.IIoT.Platform.Subscriber.Cdm.Service.csproj", "{1BC793A2-7035-4B4B-AF31-983AD756EEFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Subscriber.Cdm.Service", "services\src\Microsoft.Azure.IIoT.Platform.Subscriber.Cdm.Service\src\Microsoft.Azure.IIoT.Platform.Subscriber.Cdm.Service.csproj", "{1BC793A2-7035-4B4B-AF31-983AD756EEFB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Edge.Tunnel.Service", "services\src\Microsoft.Azure.IIoT.Services.Processor.Tunnel\src\Microsoft.Azure.IIoT.Platform.Edge.Tunnel.Service.csproj", "{6396D6A7-5A1D-4AFA-B2EF-1C663C769C2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Edge.Tunnel.Service", "services\src\Microsoft.Azure.IIoT.Platform.Edge.Tunnel.Service\src\Microsoft.Azure.IIoT.Platform.Edge.Tunnel.Service.csproj", "{6396D6A7-5A1D-4AFA-B2EF-1C663C769C2F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Core.Cli", "common\src\Microsoft.Azure.IIoT.Core\cli\Microsoft.Azure.IIoT.Core.Cli.csproj", "{225F39AA-C351-47DA-8392-817220A9102D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api", "api\src\Microsoft.Azure.IIoT.OpcUa.Api\src\Microsoft.Azure.IIoT.Platform.Api.csproj", "{141AE617-037F-43FF-A7C9-B3E01160B9E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api", "api\src\Microsoft.Azure.IIoT.Platform.Api\src\Microsoft.Azure.IIoT.Platform.Api.csproj", "{141AE617-037F-43FF-A7C9-B3E01160B9E3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Subscriber.Cdm", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Cdm\src\Microsoft.Azure.IIoT.Platform.Subscriber.Cdm.csproj", "{B32532AB-1D40-4C72-898A-96BA65DF3D9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Subscriber.Cdm", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Subscriber.Cdm\src\Microsoft.Azure.IIoT.Platform.Subscriber.Cdm.csproj", "{B32532AB-1D40-4C72-898A-96BA65DF3D9B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Serializers.NewtonSoft", "common\src\Microsoft.Azure.IIoT.Serializers.NewtonSoft\src\Microsoft.Azure.IIoT.Serializers.NewtonSoft.csproj", "{3E8DCA50-F1BC-45F4-A9E5-67F6BB55DA33}"
 EndProject
@@ -180,19 +180,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Serial
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.AspNetCore.SignalR", "common\src\Microsoft.Azure.IIoT.AspNetCore.SignalR\src\Microsoft.Azure.IIoT.AspNetCore.SignalR.csproj", "{CF79D44A-E79C-42D6-BDCA-1DDFD7108AB5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api.Events.Service.Tests", "services\src\Microsoft.Azure.IIoT.Services.OpcUa.Events\tests\Microsoft.Azure.IIoT.Platform.Api.Events.Service.Tests.csproj", "{6CFFAE7C-5943-4954-B8BF-9C455AF7F071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api.Events.Service.Tests", "services\src\Microsoft.Azure.IIoT.Platform.Api.Events.Service\tests\Microsoft.Azure.IIoT.Platform.Api.Events.Service.Tests.csproj", "{6CFFAE7C-5943-4954-B8BF-9C455AF7F071}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api.Internal.Tests", "api\src\Microsoft.Azure.IIoT.Api\tests\Microsoft.Azure.IIoT.Platform.Api.Internal.Tests.csproj", "{69864BDD-63E3-473D-AF33-96EA0637715B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Api.Internal.Tests", "api\src\Microsoft.Azure.IIoT.Platform.Api.Internal\tests\Microsoft.Azure.IIoT.Platform.Api.Internal.Tests.csproj", "{69864BDD-63E3-473D-AF33-96EA0637715B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Service.Test.Scenarios", "api\src\Microsoft.Azure.IIoT.Api.Testing\cli\Microsoft.Azure.IIoT.Platform.Service.Test.Scenarios.csproj", "{2923AD3C-A604-410C-93E9-E52DF312D55E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Service.Test.Scenarios", "api\src\Microsoft.Azure.IIoT.Platform.Service.Test.Scenarios\cli\Microsoft.Azure.IIoT.Platform.Service.Test.Scenarios.csproj", "{991AFA3B-D25C-487E-94F0-FB6364F0DFAD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Service", "services\src\Microsoft.Azure.IIoT.Services.Processor.Onboarding\src\Microsoft.Azure.IIoT.Platform.Discovery.Service.csproj", "{422C4B02-BC9F-4494-893F-7214F8FB17E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Service", "services\src\Microsoft.Azure.IIoT.Platform.Discovery.Service\src\Microsoft.Azure.IIoT.Platform.Discovery.Service.csproj", "{422C4B02-BC9F-4494-893F-7214F8FB17E1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Twin\tests\Microsoft.Azure.IIoT.Platform.Twin.Tests.csproj", "{B5D8D779-4939-4884-A61C-47C1BC966E05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Twin\tests\Microsoft.Azure.IIoT.Platform.Twin.Tests.csproj", "{B5D8D779-4939-4884-A61C-47C1BC966E05}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Tests", "modules\src\Microsoft.Azure.IIoT.Modules.OpcUa.Publisher\tests\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Tests.csproj", "{6EA8119D-2ACB-4CCF-A8B6-D95A02525E45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Tests", "modules\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module\tests\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Module.Tests.csproj", "{6EA8119D-2ACB-4CCF-A8B6-D95A02525E45}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Publisher\tests\Microsoft.Azure.IIoT.Platform.Publisher.Tests.csproj", "{262ECCD0-BFD0-4425-BC54-00D5E0673C35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Publisher\tests\Microsoft.Azure.IIoT.Platform.Publisher.Tests.csproj", "{262ECCD0-BFD0-4425-BC54-00D5E0673C35}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{0169C791-7984-4DC1-8325-E9B9604CC3DE}"
 EndProject
@@ -240,19 +240,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{83574215-292
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{5287338D-F507-410D-AABD-79C8D9D5BF07}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Edge", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge.Discovery\src\Microsoft.Azure.IIoT.Platform.Discovery.Edge.csproj", "{EDFE3D0F-37CB-461E-BCE9-B55C5DD78FC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Edge", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Discovery.Edge\src\Microsoft.Azure.IIoT.Platform.Discovery.Edge.csproj", "{EDFE3D0F-37CB-461E-BCE9-B55C5DD78FC9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge.Publisher\tests\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Tests.csproj", "{F9B3886C-449F-4F9D-A882-F6EA4639653D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge\tests\Microsoft.Azure.IIoT.Platform.Publisher.Edge.Tests.csproj", "{F9B3886C-449F-4F9D-A882-F6EA4639653D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge.Publisher\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge.csproj", "{2D66297B-0EE0-4816-83AA-364FB85EBDCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Publisher.Edge", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge.csproj", "{2D66297B-0EE0-4816-83AA-364FB85EBDCB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge.Twin\tests\Microsoft.Azure.IIoT.Platform.Twin.Edge.Tests.csproj", "{239FCACD-6BF1-4393-8EB9-E9C5DC8CEEC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Twin.Edge\tests\Microsoft.Azure.IIoT.Platform.Twin.Edge.Tests.csproj", "{239FCACD-6BF1-4393-8EB9-E9C5DC8CEEC0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge.Twin\src\Microsoft.Azure.IIoT.Platform.Twin.Edge.csproj", "{4BCEEE83-39F1-4280-8DE2-B7DDAB95AAB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Twin.Edge\src\Microsoft.Azure.IIoT.Platform.Twin.Edge.csproj", "{4BCEEE83-39F1-4280-8DE2-B7DDAB95AAB1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge.Cli", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge.Twin\cli\Microsoft.Azure.IIoT.Platform.Twin.Edge.Cli.csproj", "{846C5DC2-9EC8-4D26-A289-34A4A04C6A77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Twin.Edge.Cli", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Twin.Edge\cli\Microsoft.Azure.IIoT.Platform.Twin.Edge.Cli.csproj", "{846C5DC2-9EC8-4D26-A289-34A4A04C6A77}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Edge.Cli", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Edge.Discovery\cli\Microsoft.Azure.IIoT.Platform.Discovery.Edge.Cli.csproj", "{8F8CB6AE-2E90-4418-8602-B9A0BDF8D890}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Edge.Cli", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Discovery.Edge\cli\Microsoft.Azure.IIoT.Platform.Discovery.Edge.Cli.csproj", "{8F8CB6AE-2E90-4418-8602-B9A0BDF8D890}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{35093E45-F95E-47BD-8335-F61E23781A20}"
 EndProject
@@ -268,15 +268,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{
 		deploy\templates\azuredeploy.workbook.json = deploy\templates\azuredeploy.workbook.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Discovery\src\Microsoft.Azure.IIoT.Platform.Discovery.csproj", "{3951E237-EC54-4531-A8D0-50D2B374D187}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Discovery\src\Microsoft.Azure.IIoT.Platform.Discovery.csproj", "{3951E237-EC54-4531-A8D0-50D2B374D187}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2132F325-07C2-4D0B-B8EF-9ACC54BD2CBB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Core.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.OpcUa.Discovery\tests\Microsoft.Azure.IIoT.Platform.Discovery.Core.Tests.csproj", "{5B396DAD-5C4D-4033-A168-2EE4E4A87826}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Platform.Discovery.Tests", "components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Discovery\tests\Microsoft.Azure.IIoT.Platform.Discovery.Tests.csproj", "{5B396DAD-5C4D-4033-A168-2EE4E4A87826}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.AspNetCore", "common\src\Microsoft.Azure.IIoT.Auth.ActiveDirectory.Web\src\Microsoft.Azure.IIoT.Azure.AspNetCore.csproj", "{EF5D50C9-94F9-4526-8D43-78BB60E4F365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.AspNetCore", "common\src\Microsoft.Azure.IIoT.Azure.AspNetCore\src\Microsoft.Azure.IIoT.Azure.AspNetCore.csproj", "{EF5D50C9-94F9-4526-8D43-78BB60E4F365}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.Monitor", "common\src\Microsoft.Azure.IIoT.Diagnostics.AppInsights\src\Microsoft.Azure.IIoT.Azure.Monitor.csproj", "{1A9B0F62-8A1C-4D69-BC79-A87F31239666}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.IIoT.Azure.Monitor", "common\src\Microsoft.Azure.IIoT.Azure.Monitor\src\Microsoft.Azure.IIoT.Azure.Monitor.csproj", "{1A9B0F62-8A1C-4D69-BC79-A87F31239666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -910,14 +910,14 @@ Global
 		{69864BDD-63E3-473D-AF33-96EA0637715B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{69864BDD-63E3-473D-AF33-96EA0637715B}.Release|x64.ActiveCfg = Release|Any CPU
 		{69864BDD-63E3-473D-AF33-96EA0637715B}.Release|x64.Build.0 = Release|Any CPU
-		{2923AD3C-A604-410C-93E9-E52DF312D55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2923AD3C-A604-410C-93E9-E52DF312D55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2923AD3C-A604-410C-93E9-E52DF312D55E}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{2923AD3C-A604-410C-93E9-E52DF312D55E}.Debug|x64.Build.0 = Debug|Any CPU
-		{2923AD3C-A604-410C-93E9-E52DF312D55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2923AD3C-A604-410C-93E9-E52DF312D55E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2923AD3C-A604-410C-93E9-E52DF312D55E}.Release|x64.ActiveCfg = Release|Any CPU
-		{2923AD3C-A604-410C-93E9-E52DF312D55E}.Release|x64.Build.0 = Release|Any CPU
+		{991AFA3B-D25C-487E-94F0-FB6364F0DFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991AFA3B-D25C-487E-94F0-FB6364F0DFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991AFA3B-D25C-487E-94F0-FB6364F0DFAD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{991AFA3B-D25C-487E-94F0-FB6364F0DFAD}.Debug|x64.Build.0 = Debug|Any CPU
+		{991AFA3B-D25C-487E-94F0-FB6364F0DFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991AFA3B-D25C-487E-94F0-FB6364F0DFAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991AFA3B-D25C-487E-94F0-FB6364F0DFAD}.Release|x64.ActiveCfg = Release|Any CPU
+		{991AFA3B-D25C-487E-94F0-FB6364F0DFAD}.Release|x64.Build.0 = Release|Any CPU
 		{422C4B02-BC9F-4494-893F-7214F8FB17E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{422C4B02-BC9F-4494-893F-7214F8FB17E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{422C4B02-BC9F-4494-893F-7214F8FB17E1}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -1082,7 +1082,7 @@ Global
 		{A6172B18-13C4-4FE0-9A19-21CA7D556CBB} = {ADE562B1-0C9D-476E-A8B4-CBFA3605B232}
 		{91DE59BF-D3D9-4A86-A767-E33DDBB61476} = {40930DCF-E786-4330-A2F0-430AE618C919}
 		{FE3E720B-0C94-4883-AD71-7620F0660FAB} = {ADE562B1-0C9D-476E-A8B4-CBFA3605B232}
-		{23029DA0-F9B3-46CC-B279-1BBA855D1996} = {72646716-073F-4D6F-9ECD-52311A2BA140}
+		{23029DA0-F9B3-46CC-B279-1BBA855D1996} = {35093E45-F95E-47BD-8335-F61E23781A20}
 		{CE5A3795-B3A9-4AEA-9319-B594E2794A0F} = {BBEE26AC-8733-469B-B816-0A54EA99FC59}
 		{C093A5D1-56DB-4A54-9E81-4A644B6238EF} = {ADA1CE90-5727-4D1E-8544-50C19B09D3A1}
 		{DF41A1FC-41C0-4E95-BC73-60BDF16C2D37} = {00D499F1-0262-4C1B-9702-F40960EDA2D4}
@@ -1129,7 +1129,7 @@ Global
 		{CF79D44A-E79C-42D6-BDCA-1DDFD7108AB5} = {EDC413E0-BE91-477B-8A16-B20BBBB35933}
 		{6CFFAE7C-5943-4954-B8BF-9C455AF7F071} = {BBEE26AC-8733-469B-B816-0A54EA99FC59}
 		{69864BDD-63E3-473D-AF33-96EA0637715B} = {BBEE26AC-8733-469B-B816-0A54EA99FC59}
-		{2923AD3C-A604-410C-93E9-E52DF312D55E} = {BBEE26AC-8733-469B-B816-0A54EA99FC59}
+		{991AFA3B-D25C-487E-94F0-FB6364F0DFAD} = {35093E45-F95E-47BD-8335-F61E23781A20}
 		{422C4B02-BC9F-4494-893F-7214F8FB17E1} = {83574215-2928-4D27-9A0E-3987C07F9A80}
 		{B5D8D779-4939-4884-A61C-47C1BC966E05} = {31F3A559-EB5A-4695-A389-23ADD3FB4A39}
 		{6EA8119D-2ACB-4CCF-A8B6-D95A02525E45} = {43E69B85-2743-48EE-8FAE-A59F070E21D2}
