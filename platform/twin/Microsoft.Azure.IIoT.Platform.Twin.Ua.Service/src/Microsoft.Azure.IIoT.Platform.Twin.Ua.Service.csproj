@@ -23,7 +23,7 @@
     <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.IoTHub\src\Microsoft.Azure.IIoT.Azure.IoTHub.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\core\Microsoft.Azure.IIoT.Auth.OpenId\src\Microsoft.Azure.IIoT.Authentication.OpenId.csproj" />
+    <ProjectReference Include="..\..\..\..\core\Microsoft.Azure.IIoT.Authentication.OpenId\src\Microsoft.Azure.IIoT.Authentication.OpenId.csproj" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Microsoft.Azure.IIoT.Platform.Twin.Ua\src\Microsoft.Azure.IIoT.Platform.Twin.Ua.csproj" />
