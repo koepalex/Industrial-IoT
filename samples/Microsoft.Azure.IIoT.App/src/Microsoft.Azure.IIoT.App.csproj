@@ -32,7 +32,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\core\Microsoft.Azure.IIoT.Core\src\Microsoft.Azure.IIoT.Core.csproj" />
     <ProjectReference Include="..\..\..\core\Microsoft.Azure.IIoT.Http.SignalR\src\Microsoft.Azure.IIoT.Http.SignalR.csproj" />
-    <ProjectReference Include="..\..\..\core\src\Microsoft.Azure.IIoT.AspNetCore.SignalR\src\Microsoft.Azure.IIoT.AspNetCore.SignalR.csproj" />
+    <ProjectReference Include="..\..\..\core\Microsoft.Azure.IIoT.AspNetCore.SignalR\src\Microsoft.Azure.IIoT.AspNetCore.SignalR.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="bundleconfig.json" />
