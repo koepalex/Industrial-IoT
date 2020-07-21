@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Description>Azure Industrial IoT Core Azure Cdm Implementations</Description>
+    <Description>Azure Industrial IoT Subscriber Common Data Model support</Description>
     <NoWarn>NU1608;NU5125;NU1701</NoWarn>
   </PropertyGroup>
   <ItemGroup>

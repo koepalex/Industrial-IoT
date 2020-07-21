@@ -4,7 +4,7 @@
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Description>Azure Industrial IoT Json Serializer</Description>
+    <Description>Azure Industrial IoT Message Pack Serializer</Description>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="MessagePack" Version="1.9.11" />
