@@ -20,11 +20,13 @@
     <PackageReference Include="Mono.Options" Version="6.6.0.161" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\api\src\Microsoft.Azure.IIoT.Platform.Api.Internal\src\Microsoft.Azure.IIoT.Platform.Api.Internal.csproj" />
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.Azure.Monitor\src\Microsoft.Azure.IIoT.Azure.Monitor.csproj" />
+    <ProjectReference Include="..\..\..\..\platform\common\Microsoft.Azure.IIoT.Platform.Api.Internal\src\Microsoft.Azure.IIoT.Platform.Api.Internal.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.Azure.IoTEdge\src\Microsoft.Azure.IIoT.Azure.IoTEdge.csproj" />
-    <ProjectReference Include="..\..\..\..\components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge.csproj" />
+    <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.Monitor\src\Microsoft.Azure.IIoT.Azure.Monitor.csproj" />
+    <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.IoTEdge\src\Microsoft.Azure.IIoT.Azure.IoTEdge.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Microsoft.Azure.IIoT.Platform.Publisher.Edge\src\Microsoft.Azure.IIoT.Platform.Publisher.Edge.csproj" />
   </ItemGroup>
 </Project>

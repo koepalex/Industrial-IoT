@@ -5,7 +5,7 @@
     <Description>Azure Industrial IoT OPC Publisher component</Description>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Microsoft.Azure.IIoT.Platform.OpcUa\src\Microsoft.Azure.IIoT.Platform.OpcUa.csproj" />
-    <ProjectReference Include="..\..\Microsoft.Azure.IIoT.Platform.Abstractions\src\Microsoft.Azure.IIoT.Platform.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\..\platform\common\Microsoft.Azure.IIoT.Platform.OpcUa\src\Microsoft.Azure.IIoT.Platform.OpcUa.csproj" />
+    <ProjectReference Include="..\..\..\..\platform\common\Microsoft.Azure.IIoT.Platform.Abstractions\src\Microsoft.Azure.IIoT.Platform.Abstractions.csproj" />
   </ItemGroup>
 </Project>

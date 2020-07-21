@@ -10,13 +10,15 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.6" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.AspNetCore\src\Microsoft.Azure.IIoT.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\..\core\Microsoft.Azure.IIoT.AspNetCore\src\Microsoft.Azure.IIoT.AspNetCore.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.Azure.AspNetCore\src\Microsoft.Azure.IIoT.Azure.AspNetCore.csproj" />
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.Azure.EventHub.Processor\src\Microsoft.Azure.IIoT.Azure.EventHub.Processor.csproj" />
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.Azure.IoTHub\src\Microsoft.Azure.IIoT.Azure.IoTHub.csproj" />
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.Azure.EventHub\src\Microsoft.Azure.IIoT.Azure.EventHub.csproj" />
-    <ProjectReference Include="..\..\..\..\components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Subscriber\src\Microsoft.Azure.IIoT.Platform.Subscriber.csproj" />
+    <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.AspNetCore\src\Microsoft.Azure.IIoT.Azure.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.EventHub.Processor\src\Microsoft.Azure.IIoT.Azure.EventHub.Processor.csproj" />
+    <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.IoTHub\src\Microsoft.Azure.IIoT.Azure.IoTHub.csproj" />
+    <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.EventHub\src\Microsoft.Azure.IIoT.Azure.EventHub.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Microsoft.Azure.IIoT.Platform.Subscriber\src\Microsoft.Azure.IIoT.Platform.Subscriber.csproj" />
   </ItemGroup>
 </Project>

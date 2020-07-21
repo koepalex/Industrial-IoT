@@ -10,18 +10,20 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.6" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\api\src\Microsoft.Azure.IIoT.Platform.Api.Internal\src\Microsoft.Azure.IIoT.Platform.Api.Internal.csproj" />
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.AspNetCore\src\Microsoft.Azure.IIoT.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\..\platform\common\Microsoft.Azure.IIoT.Platform.Api.Internal\src\Microsoft.Azure.IIoT.Platform.Api.Internal.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.Azure.AspNetCore\src\Microsoft.Azure.IIoT.Azure.AspNetCore.csproj" />
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.Azure.EventHub.Processor\src\Microsoft.Azure.IIoT.Azure.EventHub.Processor.csproj" />
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.Azure.EventHub\src\Microsoft.Azure.IIoT.Azure.EventHub.csproj" />
-    <ProjectReference Include="..\..\..\..\common\src\Microsoft.Azure.IIoT.Azure.Datalake\src\Microsoft.Azure.IIoT.Azure.Datalake.csproj" />
+    <ProjectReference Include="..\..\..\..\core\Microsoft.Azure.IIoT.AspNetCore\src\Microsoft.Azure.IIoT.AspNetCore.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Subscriber.Cdm\src\Microsoft.Azure.IIoT.Platform.Subscriber.Cdm.csproj" />
-    <ProjectReference Include="..\..\..\..\components\opc-ua\src\Microsoft.Azure.IIoT.Platform.Subscriber\src\Microsoft.Azure.IIoT.Platform.Subscriber.csproj" />
+    <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.AspNetCore\src\Microsoft.Azure.IIoT.Azure.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.EventHub.Processor\src\Microsoft.Azure.IIoT.Azure.EventHub.Processor.csproj" />
+    <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.EventHub\src\Microsoft.Azure.IIoT.Azure.EventHub.csproj" />
+    <ProjectReference Include="..\..\..\..\azure\Microsoft.Azure.IIoT.Azure.Datalake\src\Microsoft.Azure.IIoT.Azure.Datalake.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Microsoft.Azure.IIoT.Platform.Subscriber.Cdm\src\Microsoft.Azure.IIoT.Platform.Subscriber.Cdm.csproj" />
+    <ProjectReference Include="..\..\Microsoft.Azure.IIoT.Platform.Subscriber\src\Microsoft.Azure.IIoT.Platform.Subscriber.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
