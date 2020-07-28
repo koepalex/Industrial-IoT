@@ -4,23 +4,21 @@
 // ------------------------------------------------------------
 
 namespace Microsoft.Azure.IIoT.Platform.Publisher.Edge.Cli {
-    using Microsoft.Azure.IIoT.Diagnostics;
-    using Microsoft.Azure.IIoT.Module;
     using Microsoft.Azure.IIoT.OpcUa.Edge.Publisher;
     using Microsoft.Azure.IIoT.OpcUa.Edge.Publisher.Engine;
     using Microsoft.Azure.IIoT.OpcUa.Edge.Publisher.Models;
     using Microsoft.Azure.IIoT.OpcUa.Protocol.Models;
     using Microsoft.Azure.IIoT.OpcUa.Publisher;
     using Microsoft.Azure.IIoT.OpcUa.Publisher.Models;
+    using Microsoft.Azure.IIoT.Diagnostics;
+    using Microsoft.Azure.IIoT.Module;
     using Opc.Ua;
     using Serilog;
     using Serilog.Events;
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
-    using System.IO;
     using System.Linq;
-    using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
 
@@ -34,9 +32,9 @@ namespace Microsoft.Azure.IIoT.Platform.Publisher.Edge.Cli {
         /// </summary>
         public static void Main(string[] args) {
 
-            var inputRate = 30000; // x values total per second
+            var inputRate = 40000; // x values total per second
             var notifications = 1000; // over x messages
-            var outputRate = 100; // x network messages per second
+            var outputRate = -1; // x network messages per second (-1 == max)
             var mode = MessagingMode.Samples;
             var encoding = MessageEncoding.Json;
             var batchInterval = TimeSpan.FromMilliseconds(500);
@@ -144,7 +142,8 @@ Options:
                 Console.WriteLine(e);
             };
             try {
-                RunBenchmarkAsync(inputRate, notifications, batchSize, batchInterval, mode, encoding, outputRate, logger).Wait();
+                RunBenchmarkAsync(inputRate, notifications, batchSize, batchInterval,
+                    mode, encoding, outputRate, logger).Wait();
             }
             catch (Exception e) {
                 logger.Error(e, "Exception");
@@ -191,6 +190,7 @@ Options:
             public int? MaxMessageSize { get; }
             public TimeSpan? DiagnosticsInterval { get; }
 
+            public long SendErrorCount { get; }
             public long SentMessagesCount => _sentMessagesCount;
             public string DeviceId { get; } = "Device";
             public string ModuleId { get; } = "Module";
@@ -199,13 +199,13 @@ Options:
 
             public Mock(int inputRate, int notifications, int batchSize, TimeSpan interval,
                 MessagingMode mode, MessageEncoding encoding, int outputRate, ILogger logger) {
-                _inputRate = inputRate == 0 ? 1 : inputRate;
+                _inputRate = inputRate < 1 ? int.MaxValue : inputRate;
                 _notifications = notifications == 0 || notifications > _inputRate ? 1 : notifications;
                 _batchSize = batchSize;
                 _interval = interval;
                 _mode = mode;
                 _encoding = encoding;
-                _outputRate = outputRate == 0 ? 1 : outputRate;
+                _outputRate = outputRate;
                 _logger = logger;
                 DiagnosticsInterval = TimeSpan.FromSeconds(10);
             }
@@ -216,7 +216,9 @@ Options:
             }
 
             public Task RunAsync(CancellationToken ct) {
-                return Task.Run(async () => {
+                var tcs = new TaskCompletionSource<bool>();
+                var thread = new Thread(_ => {
+
                     _logger.Information("Starting producer");
                     var sw = new Stopwatch();
                     var cls = Guid.NewGuid();
@@ -318,14 +320,17 @@ Options:
                         }
                         var elapsed = sw.ElapsedMilliseconds;
                         if (elapsed < 1000) {
-                            await Task.Delay(1000 - (int)elapsed, ct);
+                            Thread.Sleep(1000 - (int)elapsed);
                         }
                         else {
                             Console.WriteLine("Drifting");
                         }
                     }
                     _logger.Information("Ending producer");
+                    tcs.SetResult(true);
                 });
+                thread.Start(); // Produce
+                return tcs.Task;
             }
 
             public async Task SendAsync(IEnumerable<NetworkMessageModel> messages) {
@@ -335,8 +340,8 @@ Options:
                     // await File.WriteAllTextAsync("test.json", Encoding.UTF8.GetString(message.Body));
                     Interlocked.Increment(ref _sentMessagesCount);
                 }
-                if (_outputRate < 1000) {
-                    await Task.Delay((1000 / _outputRate) * numberOfMessages); // Sending rate
+                if (_outputRate > 0 && _outputRate < 1000) {
+                    await Task.Delay(1000 / _outputRate * numberOfMessages); // Sending rate
                 }
             }
 

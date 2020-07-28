@@ -25,6 +25,8 @@ namespace Microsoft.Azure.IIoT.OpcUa.Edge.Publisher.Engine {
 
         /// <inheritdoc/>
         public long SentMessagesCount { get; private set; }
+        /// <inheritdoc/>
+        public long SendErrorCount { get; private set; }
 
         /// <summary>
         /// Create IoT hub message sink
@@ -79,6 +81,8 @@ namespace Microsoft.Azure.IIoT.OpcUa.Edge.Publisher.Engine {
                     }
                     catch (Exception e) {
                         _logger.Error(e, "Error sending message(s) to IoT Hub");
+                        SendErrorCount += messagesCount;
+                        return;
                     }
 
                     sw.Stop();
